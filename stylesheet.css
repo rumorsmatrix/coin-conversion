@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|IM+Fell+Great+Primer|Merriweather');
+
+body {
+	margin: 2em auto;
+	font-family: "Merriweather", serif;
+}
+
+a {
+	color: #f00; text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	line-height: 1.75em;
+}
+
+h1 {
+	font-family: 'IM Fell Great Primer';
+	font-weight: bold;
+}
+
+small {
+	font-size: 65%;
+}
+
+#page {
+	margin: auto;
+	width: 600px;
+}
+
+form {
+	margin: 2em 0em 4em 2em;
+}
+
+#cp, #sp, #ep, #gp, #pp {
+	font-family: 'Fira Mono', monospace;
+	width: 5em;
+	text-align: center;
+	padding-left: 1.2em;
+}
+
+#results {
+	font-size: 150%;
+	margin: 1em 2em;
+}
+
+table {
+	text-align: center;
+}
+

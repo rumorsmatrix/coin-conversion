@@ -1,0 +1,54 @@
+<!doctype HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Coin conversion</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<div id="page">
+
+	<h1>Coin conversion</h1>
+	<p>
+		Because keeping track of wealth in five different denominations can be tedious, a tiny javascript
+		tool by <a href="https://twitter.com/rumorsmatrix">@rumorsmatrix</a>.
+	</p>
+
+	<form>
+		<table>
+			<tr>
+				<td><label for="cp">CP</label></td>
+				<td><label for="sp">SP</label></td>
+				<td><label for="ep">EP</label></td>
+				<td><label for="gp">GP</label></td>
+				<td><label for="pp">PP</label></td>
+			</tr>
+			<tr>
+				<td><input type="number" value="0" name="cp" id="cp"></td>
+				<td><input type="number" value="0" name="sp" id="sp"></td>
+				<td><input type="number" value="0" name="ep" id="ep"></td>
+				<td><input type="number" value="0" name="gp" id="gp"></td>
+				<td><input type="number" value="0" name="pp" id="pp"></td>
+			</tr>
+		</table>
+
+		<div id="results">
+			= <span id="gp_result_rounded">0</span> <small>GP</small> <small>(<span id="gp_result">0</span> GP)</small>
+		</div>
+	</form>
+
+	<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Tracking wealth with five different coins is a fiddly waste of time, change my mind. <br><br>When Conan slams down coin for an ale and a wench after slaying cultists all day, no-one gives a shit what denomination it&#39;s in. <a href="https://t.co/AB3pq5o9wA">pic.twitter.com/AB3pq5o9wA</a></p>&mdash; rumors matrix · botlg (@rumorsmatrix) <a href="https://twitter.com/rumorsmatrix/status/976248805036355584?ref_src=twsrc%5Etfw">March 21, 2018</a></blockquote>
+	<script async src="https://xxxxplatform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<script type="text/javascript" src="coin-conversion.js"></script>
+<script type="text/javascript">
+	var input_elements = document.querySelectorAll('input');
+	input_elements.forEach(function(e) {
+	    e.addEventListener("change", redraw);
+	    e.addEventListener("keyup", redraw);
+	});
+</script>
+</body>
+</html>
